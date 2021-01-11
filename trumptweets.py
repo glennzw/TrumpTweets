@@ -75,7 +75,7 @@ if __name__ == "__main__":
     medianTD = median(deltas)
     #print("[+] Max time between tweets: {}".format(humanize.naturaldelta(maxDelta)))
     print("[+] Longest delay between tweeting ({}) after this tweet : \"{}\" ({})".format(humanize.naturaldelta(maxDelta), maxDeltaTweet.get("text"), maxDeltaTweet.get("date")))
-    print("[+] Tweet after that big delay: \"{}\"".format(maxDeltaTweetNext.get("text")))
+    print("[+] Tweet after that big delay: \"{}\" ({})".format(maxDeltaTweetNext.get("text"), maxDeltaTweetNext.get("date")))
     print("[+] Mean time between tweets: {}".format(humanize.naturaldelta(meanTD)))
     print("[+] Median time between tweets: {}".format(humanize.naturaldelta(medianTD)))
 
